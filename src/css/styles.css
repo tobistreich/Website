@@ -33,52 +33,61 @@ body {
     font-size: 1.1rem;
 }
 
- .header-nav > a >img {
+ .header-nav a >img {
     height: 30px;
     width: auto;
-    position: absolute;
-    left: 2rem;
-    top: 0.55rem;
+    float: left;
+    margin: .55rem;
  }
 
- .header-nav > ul {
+ .header-nav ul {
     margin: 0;
     padding: 0;
-    position: absolute;
-    right: 2rem;
+    float: right;
     height: 100%;
  }
 
- .header-nav > ul > li {
+ .header-nav ul > li {
     display: inline-block;
     height: 100%;
     padding: 0 .4rem 0 .4rem;
  }
 
- .header-nav > ul > li > a {
+ .header-nav ul > li > a {
     display: inline-block;
     margin-top: .8rem;
  }
  
- .header-nav > ul > li > a:link {
+ .header-nav ul > li > a:link {
     color: #fff;
     text-decoration: none;
  }
 
- .header-nav > ul > li > a:hover {
+ .header-nav ul > li > a:hover {
     color: #E5E5E5;
     text-decoration: none;
  }
 
- .header-nav > ul > li > a:active {
+ .header-nav ul > li > a:active {
     color: #E5E5E5;
     text-decoration: none;
  }
 
- .header-nav > ul > li > a:visited {
+ .header-nav ul > li > a:visited {
     color: #fff;
     text-decoration: none;
  }
+
+ .header-nav .col-6 {
+   padding-top: 0;
+   padding-bottom: 0;
+ }
+
+.header-nav .container,
+.header-nav .row,
+.header-nav .col-6 {
+   height: 100%;
+}
 
  .active {
     background-color: #A62C21;
@@ -103,4 +112,83 @@ body {
     background-size: contain;
  }
 
+
+/*
+
+=== GRID SYSTEM (SICHTBARKEIT) ===
+
+.border, .border * {
+   border: 1px solid #91C4FF;
+}
+
+[class*='col-'] {
+   background-color: #BFDBFF;
+}
+
+p {
+   background-color: #91C4FF;
+   padding: 0;
+   margin: 0;
+   color: #FFF;
+   text-align: center;
+} 
+
+*/
+
+
+ /* === GRID SYSTEM === */
+
+ .container {
+   width: 95%;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .row::after {
+   content: "";
+   clear: both;
+   display: block;
+ }
+
+ [class*='col-'] {
+   float: left;
+   min-height: 1px;
+   padding: .8rem;
+ }
+ 
+ .col-1 { width: 16.666%;  }
+ .col-2 { width: 33.333%;  }
+ .col-3 { width: 50%;      }
+ .col-6 { width: 100%;     }
+
+ /* 
+
+ === WICHTIGE BREAKPOINTS ===
+
+480 Pixel (iPhone Querformat)
+768 Pixel (iPad Hochformat)
+1024 Pixel (iPad Querformat)
+
+ */
+
+ @media (max-width: 1024px) {
+
+   .col-1 { width: 33.333%;   }
+
+ }
+
+
+@media (max-width: 768px) {
+   
+   .col-1 { width: 50%;       }
+   .col-2 { width: 100%;      }
+   .col-3 { width: 100%;      }
+}
+
+@media (max-width: 480px) {
+   
+   .col-1 { width: 100%;      }
+   .col-2 { width: 100%;      }
+   .col-3 { width: 100%;      }
+}
  
