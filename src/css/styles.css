@@ -11,15 +11,28 @@ HELL GRAU:      #E5E5E5
 ROT:            #A62C21
 */
 
+/* === GLOBAL === */
 
 body {
-    margin: 0;
-    font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
-    font-size: 16px;
+   margin: 0;
+   font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
+   font-size: 16px;
 }
 
 * {
-    box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* === GENERELLES === */
+
+.clearfix::after {
+   content: "";
+   display: block;
+   clear: both;
+}
+
+.active {
+   background-color: #A62C21 !important; 
 }
 
 /*=== Navigationsleiste ===*/
@@ -89,12 +102,70 @@ body {
    height: 100%;
 }
 
- .active {
-    background-color: #A62C21;
+ 
+
+
+ /* === NAVIGATIONSLEISTE (MOBIL) === */
+
+ .mobile-nav-button {
+
+   color: #FFF;
+   float: right;
+   font-size: 2rem;
+   border: 2px solid #FFF;
+   width: 37px;
+   height: 37px;
+   position: relative;
+   margin-top: .4rem;
+   margin-bottom: .4rem;
 
  }
 
- /* === HEADER _ BANNER === */
+ .mobile-nav-button > span {
+   position: absolute;
+   bottom: -0.5px;
+   left: 7.5px;
+ }
+
+ .mobile-nav-content > ul > li {
+   display: block;
+   background-color: #3D3F45;
+   height: 50px;
+   padding: 0 1.2rem;
+   text-align: center;
+ }
+
+ .mobile-nav-dropdown {
+   position: relative;
+   display: inline-block;
+   float: right;
+ }
+
+ .mobile-nav-content {
+   position: absolute;
+   right: 0;
+   top: 50px;
+   display: none;
+ }
+
+ .mobile-nav-dropdown:hover > .mobile-nav-content {
+   display: block;
+ }
+
+ .mobile-nav {
+   display: none;
+ }
+
+ 
+@media (max-width: 768px) {
+
+   .desktop-nav { display: none        }
+   .mobile-nav { display: inline-block }
+
+}
+
+
+ /* === HEADER - BANNER === */
 
  .header-banner {
     width: 100%;
@@ -111,7 +182,6 @@ body {
     background: url("../img/hintergrund-klein.jpg") no-repeat center center;
     background-size: contain;
  }
-
 
 /*
 
@@ -187,8 +257,8 @@ p {
 
 @media (max-width: 480px) {
    
-   .col-1 { width: 100%;      }
-   .col-2 { width: 100%;      }
-   .col-3 { width: 100%;      }
+   .col-1 { width: 100%;         }
+   .col-2 { width: 100%;         }
+   .col-3 { width: 100%;         }
 }
  
