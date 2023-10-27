@@ -35,6 +35,21 @@ body {
    background-color: #A62C21 !important; 
 }
 
+.fettgedruckter-text {
+   font-weight:  bold;
+}
+
+.screenreader {
+   display: none;
+}
+
+.btn-typ-1 {
+   background-color: #A62C21;
+   border: 2px solid #A62C21;
+   color: #FFF;
+   padding: .4rem .6rem;
+}
+
 /*=== Navigationsleiste ===*/
 
 .header-nav {
@@ -156,7 +171,7 @@ body {
    display: none;
  }
 
- 
+
 @media (max-width: 768px) {
 
    .desktop-nav { display: none        }
@@ -181,6 +196,36 @@ body {
     padding-top: 15.625%;
     background: url("../img/hintergrund-klein.jpg") no-repeat center center;
     background-size: contain;
+ }
+
+ /* === NEWSLETTER-BEREICH === */ 
+
+ .newsletter-bereich {
+   width: 100%;
+   background-color: #3D3F45;
+ }
+
+ #nb-werbetext {
+   color: #FFF;
+   font-size: 1.2rem;
+ }
+
+ .nb-email-input {
+   width: 70%;
+   height: 35px;
+   border: 2px solid #FFF;
+   padding: .4rem;
+ }
+
+ #nb-btn {
+   height: 35px;
+ }
+
+ #nb-form {
+   margin-top: 1.5rem;
+   float: right;
+   width: 100%;
+   text-align: right;
  }
 
 /*
@@ -229,6 +274,7 @@ p {
  .col-1 { width: 16.666%;  }
  .col-2 { width: 33.333%;  }
  .col-3 { width: 50%;      }
+ .col-4 { width: 66.666%   }
  .col-6 { width: 100%;     }
 
  /* 
@@ -253,12 +299,14 @@ p {
    .col-1 { width: 50%;       }
    .col-2 { width: 100%;      }
    .col-3 { width: 100%;      }
+   .col-4 { width: 100%;      }
 }
 
 @media (max-width: 480px) {
    
-   .col-1 { width: 100%;         }
-   .col-2 { width: 100%;         }
-   .col-3 { width: 100%;         }
+   .col-1 { width: 100%;      }
+   .col-2 { width: 100%;      }
+   .col-3 { width: 100%;      }
+   .col-4 { width: 100%;      }
 }
  
