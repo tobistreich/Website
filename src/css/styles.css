@@ -28,6 +28,12 @@ body {
    box-shadow: 0 0 2px 2px #E5E5E5, 0 0 10px #E5E5E5;
 }
 
+section {
+   padding-top: 4rem;
+   padding-bottom: 4rem;
+}
+
+
 /* === GENERELLES === */
 
 .clearfix::after {
@@ -54,6 +60,26 @@ body {
    color: #FFF;
    padding: .4rem .6rem;
 }
+
+.intro-container {
+   text-align: center;
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 2.5rem;
+}
+
+.intro-container > h1 {
+   font-size: 1.6rem;
+   text-transform: uppercase;
+}
+
+.intro-container > p {
+   font-size: 1.2rem;
+}
+
+
+
 
 /*=== Navigationsleiste ===*/
 
@@ -212,6 +238,8 @@ body {
  #newsletter-bereich {
    width: 100%;
    background-color: #3D3F45;
+   padding-top: 0;
+   padding-bottom: 0;
  }
 
  #nb-werbetext {
@@ -275,6 +303,27 @@ body {
       padding: .1rem;
    }
  }
+
+
+/* === LEISTUNGEN - BEREICH  === */
+
+.leistungs-box {
+   background-color: #3D3F45;
+   text-align: center;
+   color:#FFF;
+   padding: 1rem 3rem 2.5rem;
+   width: 60%;
+}
+
+#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+   margin-left: 1rem;
+   margin-right: auto;
+}
+
+#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+   margin-right: 1rem;
+   margin-left: auto;
+}
 
 /*
 
