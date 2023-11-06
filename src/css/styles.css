@@ -23,6 +23,11 @@ body {
    box-sizing: border-box;
 }
 
+:focus {
+   outline: none;
+   box-shadow: 0 0 2px 2px #E5E5E5, 0 0 10px #E5E5E5;
+}
+
 /* === GENERELLES === */
 
 .clearfix::after {
@@ -115,6 +120,10 @@ body {
 #header-nav .row,
 #header-nav .col-6 {
    height: 100%;
+}
+
+.logo-link {
+   display: inline-block;
 }
 
  
