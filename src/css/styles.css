@@ -690,15 +690,17 @@ section {
    .flex-container {
       width: 90%;
    }
-   
+
 }
 
 @media (max-width: 1024px) {
 
    .flex-container {
       width: 100%;
+      padding-right: 4rem;
+      padding-left: 4rem;
    }
-   
+
 }
 
 .flex-container > .intro-container {
@@ -724,16 +726,89 @@ section {
    box-shadow: 0 0 20px #A62C21;
 }
 
-.leistungs-box h1 {
-   margin-bottom: 0;
-   margin-top: 1rem;
-}
-
 .leistungs-box-empfohlen {
    flex-basis: 27.5%;
    min-height: 500px;
    box-shadow: 0 0 20px #3D3F45;
    font-size: 1.05rem;
+}
+
+@media (max-width: 1782px) {
+
+   .leistungs-box {
+      flex-basis: 27.5%;
+   }
+   
+   .leistungs-box-empfohlen {
+      flex-basis: 30%;
+   }
+
+}
+
+@media (max-width: 1622px) {
+
+   .leistungs-box {
+      flex-basis: 30%;
+   }
+   
+   .leistungs-box-empfohlen {
+      flex-basis: 32.5%;
+   }
+
+}
+
+@media (max-width: 1544px) {
+
+   .leistungs-box {
+      padding: 1rem 2rem;
+   }
+
+   .leistungs-box-empfohlen {
+      min-width: 380px;
+   }
+
+}
+
+@media (max-width: 1224px) {
+
+   .leistungs-box {
+      padding: 1rem 1rem;
+   }
+   .flex-container {
+      width: 100%;
+   }
+}
+
+@media (max-width: 1024px) {
+
+   .flex-container {
+      flex-direction: column;
+   }
+
+   .leistungs-box {
+      padding: 2rem 4rem;
+      margin-bottom: 1rem;
+      min-width: initial;
+
+   }
+
+}
+
+@media (max-width: 512) {
+   .flex-container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      width: 95%;
+      
+   }
+   .leistungs-box {
+      width: 90%;
+   }
+}
+
+.leistungs-box h1 {
+   margin-bottom: 0;
+   margin-top: 1rem;
 }
 
 .leistungen-box ul {
@@ -756,11 +831,6 @@ section {
 .leistung-auswählen-btn:hover {
    font-weight: normal;
 }
-
-@media (max-width: ) {
-
-}
-
 
 /*
 
