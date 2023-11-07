@@ -70,6 +70,54 @@
 
         <header id="header-banner-klein"></header>
 
+        <!-- KONTAK - BEREICH -->
+
+        <section id="kontakt-bereich">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-6">
+                        <header class="intro-container">
+                            <h1>Kontakt</h1>
+                            <p>lorem Ipsum dolor sit amet, cconsectetur adipisicing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aligqua</p>
+                        </header>
+                    </div>
+                </div>
+                <form id="kontakt-formular" action="kontakt.html" method="post">
+                    <div class="row">
+                        <div class="col-3">
+                            <label for="vorname" class="screenreader">Vorname:</label>
+                            <input id="vorname" type="text" name="vorname" placeholder="Vorname">
+                        </div>
+                        <div class="col-3">
+                            <label for="nachname" class="screenreader">Nachname:</label>
+                            <input id="nachname" type="text" name="nachname" placeholder="Nachname">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="email" class="screenreader">E-Mail:</label>
+                            <input id="email" type="text" name="email" placeholder="E-Mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Bitte gib eine gültige E-Mail Adresse ein.">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="nachricht" class="screenreader">nachricht:</label>
+                            <textarea name="nachricht" id="nachricht" placeholder="Nachricht"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <button id="senden" type="submit" name="absendenButton">Senden</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </section>
+
         <!-- FOOTER -->
 
         <footer id="footer">
@@ -86,6 +134,8 @@
             </div>
 
         </footer>
+        
+
     </body>
 
 </html>
