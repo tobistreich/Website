@@ -680,6 +680,7 @@ section {
 }
 
 .leistungs-box {
+   border-radius: 25px;
    background-color: #3D3F45;
    flex-basis: 25%;
    color: #FFF;
@@ -692,10 +693,19 @@ section {
    justify-content: space-around;
 }
 
+.leistungs-box:hover {
+   box-shadow: 0 0 20px #A62C21;
+}
+
+.leistungs-box h1 {
+   margin-bottom: 0;
+}
+
 .leistungs-box-empfohlen {
    flex-basis: 27.5%;
    min-height: 500px;
    box-shadow: 0 0 20px #3D3F45;
+   font-size: 1.05rem;
 }
 
 .leistungen-box ul {
