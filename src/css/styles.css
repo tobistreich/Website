@@ -378,7 +378,7 @@ section {
 
 /* === LEISTUNGEN - BEREICH  === */
 
-.leistungs-box {
+.leistungs-teaser-box {
    background-color: #3D3F45;
    text-align: center;
    color:#FFF;
@@ -387,17 +387,17 @@ section {
    margin-bottom: 2rem;
 }
 
-#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
    margin-left: 1rem;
    margin-right: auto;
 }
 
-#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box {
    margin-right: 1rem;
    margin-left: auto;
 }
 
-.leistungs-box > h2 {
+.leistungs-teaser-box > h2 {
    font-size: 1.4rem;
 }
 
@@ -431,7 +431,7 @@ section {
 
 @media (max-width: 1366px) {
 
-   .leistungs-box {
+   .leistungs-teaser-box {
       width: 80%;
    }
 
@@ -439,16 +439,16 @@ section {
 
 @media (max-width: 1024px) {
 
-   .leistungs-box {
+   .leistungs-teaser-box {
       width: 100%;
       margin-bottom: 1rem;
    }
 
-   #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+   #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
       margin-left: .6rem;
    }
    
-   #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+   #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box {
       margin-right: .6rem;
    }
 
@@ -456,11 +456,11 @@ section {
 
 @media (max-width: 768px) {
 
-   #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+   #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
       margin-left: 0;
    }
    
-   #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+   #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box {
       margin-right: 0;
    }
 
@@ -627,6 +627,84 @@ section {
    #über-uns-container > img {
       display: none;
    }
+}
+
+/* === FOOTER === */
+
+#footer {
+   background-color: #3D3F45;
+   color: #FFF;
+   height: 2.8rem;
+}
+
+#footer-nav {
+   display: inline-block;
+   float: right;
+}
+
+#footer-nav > a {
+   text-decoration: none;
+}
+
+#footer-nav > a:link {
+   color: #FFF;
+}
+
+#footer-nav > a:visited {
+   color: #FFF;
+}
+
+#footer-nav > a:active {
+   color: #FFF;
+}
+
+#footer-nav > a:hover {
+   color: #F0F0F0;
+}
+
+@media (max-width: 565px) {
+   #footer span {
+      display: none;
+   }
+}
+
+/* === LEISTUNGEN - SEITE === */
+
+.flex-container {
+   display: flex;
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.leistungs-box {
+   background-color: #3D3F45;
+   flex-basis: 25%;
+   color: #FFF;
+   padding: 2rem 4rem;
+   text-align: center;
+   min-height: 400px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.leistungs-box-empfohlen {
+   flex-basis: 27.5%;
+   min-height: 500px;
+   box-shadow: 0 0 20px #3D3F45;
+}
+
+.leistungen-box ul {
+   padding: 0;
+}
+
+.leistungen-box ul > li {
+   list-style-position: inside;
+   margin-bottom: .5rem;
 }
 
 
