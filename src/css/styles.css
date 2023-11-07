@@ -65,6 +65,7 @@ section {
 
 .active {
    background-color: #A62C21 !important; 
+   border-radius: 10px;
 }
 
 .fettgedruckter-text {
@@ -323,10 +324,12 @@ section {
    height: 35px;
    border: 2px solid #FFF;
    padding: .4rem;
+   border-radius: 10px;
  }
 
  #nb-btn {
    height: 35px;
+   border-radius: 10px;
  }
 
  #nb-form {
@@ -385,6 +388,7 @@ section {
    padding: 1rem 3rem 2.5rem;
    width: 60%;
    margin-bottom: 2rem;
+   border-radius: 25px;
 }
 
 #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
@@ -409,6 +413,7 @@ section {
    padding-top: .5rem;
    min-width: 100px;
    margin-top: 1rem;
+   border-radius: 15px;
 }
 
 .leistung-ansehen-btn:link {
@@ -479,6 +484,7 @@ section {
    margin-left: auto;
    margin-right: auto;
    display: block;
+   border-radius: 25px;
 }
 
 @media (max-width: 1440px) {
