@@ -25,7 +25,7 @@ body {
 
 :focus {
    outline: none;
-   box-shadow: 0 0 2px 2px #F0F0F0, 0 0 10px #F0F0F0;
+   box-shadow: 0 0 0 0 #F0F0F0, 0 0 10px #F0F0F0;
 }
 
 section {
@@ -378,6 +378,40 @@ section {
    }
  }
 
+ /* === ANIMIERTES LOGO === */
+
+ @keyframes logoAnimation {
+   0% { transform: rotateZ(0deg);         }
+   11.111% { transform: rotateZ(0deg);    }
+   22.222% { transform: rotateZ(90deg);   }
+   33.333% { transform: rotateZ(90deg);   }
+   44.444% { transform: rotateZ(180deg);  }
+   55.555% { transform: rotateZ(180deg);  }
+   66.666% { transform: rotateZ(270deg);  }
+   77.777% { transform: rotateZ(270deg);  }
+   88.888% { transform: rotateZ(360deg);  }
+   100% { transform: rotateZ(360deg);     }
+ }
+
+ #animiertes-logo {
+   height: 150px;
+   width: 150px;
+   background-color: #3D3F45;
+   border-radius: 50%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 4rem;
+   padding: 22.5px;
+ }
+
+ #animiertes-logo > img {
+   display: block;
+   width: 100px;
+   height: 100px;
+   margin-left: auto;
+   margin-right: auto;
+   animation: logoAnimation 5s ease-in-out infinite alternate;
+ }
 
 /* === LEISTUNGEN - BEREICH  === */
 
@@ -549,7 +583,12 @@ section {
    height: 120px;
    border-radius: 50%;
    margin-left: auto;
-   margin-right: auto;    
+   margin-right: auto; 
+   transition: transform 0.75s;   
+}
+
+.service-icon:hover {
+   transform: rotateZ(360deg);
 }
 
 #guenstig-icon {
@@ -570,6 +609,7 @@ section {
       margin-right: auto;
       margin-left: auto;
    }
+
 }
 
 @media (max-width: 480px) {
@@ -811,14 +851,15 @@ section {
    margin-top: 1rem;
 }
 
-.leistungen-box ul {
+.leistungs-box ul {
    padding: 0;
 }
 
-.leistungen-box ul > li {
+.leistungs-box ul > li {
    list-style-position: inside;
    margin-bottom: .5rem;
 }
+
 
 .leistung-auswählen-btn {
    width: 50%;
@@ -837,12 +878,45 @@ section {
 #kontakt-formular input,
 #kontakt-formular textarea {
    width: 100%;
+   border: 2px solid #3D3F45;
+   padding: .5rem;
+   font-size: 1rem;
+   font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
+   color:#3D3F45;
+}
+
+#kontakt-formular textarea {
+   height: 100px;
+}
+
+.btn-typ-3 {
+   border: 2px solid #3D3F45;
+   background-color: transparent;
+   font-size: 1rem;
+   color: #3D3F45;
+   width: 150px;
+   height: 39px;
+}
+
+#kontakt-formular input:hover,
+#kontakt-formular input:focus,
+#kontakt-formular textarea:hover,
+#kontakt-formular textarea:focus,
+#kontakt-formular .btn-typ-3:hover {
+   border: 2px solid #A62C21;
+}
+
+@media (max-width: 768px) {
+   #kontakt-formular button {
+      width: 100%;
+   }
 }
 
 #kontakt-formular {
    width: 80%;
    margin-left: auto;
    margin-right: auto;
+   margin-bottom: 4rem;
 }
 
 @media (max-width: 1366px) {
@@ -861,6 +935,30 @@ section {
    
 }
 
+/* === IMPRESSUM - BEREICH === */
+
+#impressum-bereich h1,
+#impressum-bereich h2,
+#impressum-bereich h3,
+#impressum-bereich p {
+   text-align: center;
+}
+
+#impressum-bereich h1 {
+   font-size: 1.6rem;
+}
+
+#impressum-bereich h2 {
+   font-size: 1.4rem;
+}
+
+#impressum-bereich h3 {
+   font-size: 1.2rem;
+}
+
+#impressum-bereich p {
+   font-size: 1rem;
+}
 
 /*
 
